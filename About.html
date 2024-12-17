@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Container */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-image: url("R.jpg");
+  color: #b41111;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .logo {
+            font-size: 50px;
+            font-weight: bold;
+            font-style: italic;
+            color:#ffcc00 ;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+
+/* About Section */
+.about {
+  padding: 4em 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+  position: relative;
+  display: inline-block;
+}
+
+.about h2::after {
+  
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #ff9800;
+  margin: 0.5em auto;
+}
+
+.about .intro {
+  font-size: 1.2rem;
+  margin-bottom: 2em;
+  color: #ebeaea;
+}
+
+/* Team Section */
+.team {
+  display: flex;
+  justify-content: center;
+  
+  flex-wrap: wrap;
+}
+
+.team .member {
+  background: #b13e3e;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5em;
+  width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team .member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team .member img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 1em;
+}
+
+.team .member h3 {
+  font-size: 1.2rem;
+  color: #210e3b;
+  margin-bottom: 0.5em;
+}
+
+.team .member p {
+  font-size: 1rem;
+  color: #210e3b;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e293b;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team {
+    flex-direction: column;
+  }
+
+  .team .member {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Litlens<span>&#8482;</span></div>
+        <nav>
+            <ul>
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="Genre.html" target="_blank">Bookstore</a></li>
+                
+                <li><a href="#">About Us</a></li>
+                
+                
+            </ul>
+        </nav>
+    </header>
+  
+  <section class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p class="intro">
+        Welcome to <strong>Litlens</strong>, your ultimate destination for insightful book reviews, literary discussions, and a community of avid readers. Our mission is to inspire a love for reading and help you discover your next favorite book.
+      </p>
+      <div class="team">
+        <div class="member">
+          <img src="WhatsApp Image 2024-12-17 at 02.44.02_60b5d770.jpg" alt="Team Member 1">
+          <h3>Akshat Vashishtha</h3>
+          <p>STUDENT OF KIET GROUP OF INSTITUTIONS,GHAZIABAD</p>
+          <p>B.Tech IT (I) YEAR</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copyAll rights reserved and occupied by Litlens; </p>
+  </footer>
+</body>
+</html>
